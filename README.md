@@ -6,7 +6,7 @@ On simule la propagation d’une épidémie dans un réseau de villes, l'objecti
 
 
 
-## **Objectifs**
+## Objectifs
 
 * On a un fichier avec les infos sur les villes (ville, habitant, nb infectés, connexion avec quelles autres villes)
 * La maladie se propage chaque jour aux villes voisines et infecte un certain nombre de personnes supplémentaires.
@@ -25,7 +25,7 @@ On simule la propagation d’une épidémie dans un réseau de villes, l'objecti
 
 * Ces contraintes sont vérifiées par les tests déjà écrits.
 
-## **Fichiers fournis**
+## Fichiers fournis
 
 1. **`df_epidemic.csv`** : contient les infos sur les villes
 
@@ -53,7 +53,7 @@ On simule la propagation d’une épidémie dans un réseau de villes, l'objecti
 * Est-ce qu'on peut mutualiser des morceaux de code entre les stratégies ? Si oui définir les entrées/sorties de ces fonctions
 
 
-## **Etapes**
+## Etapes
 
 1. Lire le CSV
 2. Compléter la fonction `strat(df, jour)` pour appliquer la stratégie de confinement
@@ -66,7 +66,7 @@ On simule la propagation d’une épidémie dans un réseau de villes, l'objecti
    * (éventuellemnt) Évolution jour par jour avec des graphiques
 
 
-## ** Bonus **
+## Bonus
 
 * Ajouter des graphes pour suivre l'évolution de la pandémie chaque jour
 * Tester plusieurs variantes de la stratégie et comparer les résultats
