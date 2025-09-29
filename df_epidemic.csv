@@ -1,0 +1,21 @@
+ville,population,infectes_jour,voisins
+Ville_0,120,5,"['Ville_1', 'Ville_2']"
+Ville_1,95,2,"['Ville_0', 'Ville_3', 'Ville_4']"
+Ville_2,150,3,"['Ville_0', 'Ville_5']"
+Ville_3,80,1,"['Ville_1', 'Ville_6']"
+Ville_4,200,4,"['Ville_1', 'Ville_7']"
+Ville_5,110,0,"['Ville_2', 'Ville_8']"
+Ville_6,75,2,"['Ville_3', 'Ville_9']"
+Ville_7,160,3,"['Ville_4', 'Ville_10']"
+Ville_8,130,1,"['Ville_2', 'Ville_5', 'Ville_11']"
+Ville_9,90,0,"['Ville_6', 'Ville_12']"
+Ville_10,140,2,"['Ville_7', 'Ville_13']"
+Ville_11,85,1,"['Ville_8', 'Ville_14']"
+Ville_12,100,3,"['Ville_9', 'Ville_15']"
+Ville_13,170,4,"['Ville_10', 'Ville_16']"
+Ville_14,115,0,"['Ville_11', 'Ville_17']"
+Ville_15,125,2,"['Ville_12', 'Ville_18']"
+Ville_16,105,1,"['Ville_13', 'Ville_19']"
+Ville_17,135,3,['Ville_14']
+Ville_18,155,2,['Ville_15']
+Ville_19,145,1,['Ville_16']
