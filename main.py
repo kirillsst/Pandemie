@@ -9,15 +9,17 @@ df['voisins'] = df['voisins'].apply(ast.literal_eval)
 
 # Paramètres de simulation
 jours_max = 15
-infection_rate = 0.2  # proportion de population qui peut être infectée par contact
+infection_rate = 0.3  # proportion de population qui peut être infectée par contact
 
 # Initialisation
 df_sim = df.copy()
-
+voisins_init = df["voisins"]
 # Stockage de l'historique
 historique = []
 
 for jour in range(jours_max):
+    # Réinitialiser les voisins chaque jour
+    df_sim['voisin'] = voisins_init
     # Appliquer la stratégie de confinement
     df_sim = strat(df_sim, jour)
 
@@ -26,7 +28,6 @@ for jour in range(jours_max):
         infectes = row['infectes_jour']
         population = row['population']
         voisins = row['voisins']
-
         for voisin in voisins:
             # Trouver l'index du df correspondant à ce voisin
             idx_voisin = df_sim.index[df_sim['ville'] == voisin][0]
@@ -38,7 +39,6 @@ for jour in range(jours_max):
 
     # Sauvegarde de l'état de la journée
     historique.append(df_sim[['ville', 'infectes_jour', 'population']].copy())
-
 
 
 
