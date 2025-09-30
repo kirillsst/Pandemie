@@ -19,7 +19,7 @@ historique = []
 
 for jour in range(jours_max):
     # Réinitialiser les voisins chaque jour
-    df_sim['voisin'] = voisins_init
+    df_sim['voisins'] = voisins_init
     # Appliquer la stratégie de confinement
     df_sim = strat(df_sim, jour)
 
